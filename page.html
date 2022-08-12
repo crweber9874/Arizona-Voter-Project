@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Minimalist | Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $(".pane-list li").click(function () {
+        window.location = $(this).find("a").attr("href");
+        return false;
+    });
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $('.rss').append('<span class="hover"></span>').each(function () {
+        var $span = $('> span.hover', this).css('opacity', 0);
+        $(this).hover(function () {
+            $span.stop().fadeTo(500, 1);
+        }, function () {
+            $span.stop().fadeTo(500, 0);
+        });
+    });
+    $('.facebook').append('<span class="hover"></span>').each(function () {
+        var $span = $('> span.hover', this).css('opacity', 0);
+        $(this).hover(function () {
+            $span.stop().fadeTo(500, 1);
+        }, function () {
+            $span.stop().fadeTo(500, 0);
+        });
+    });
+    $('.twitter').append('<span class="hover"></span>').each(function () {
+        var $span = $('> span.hover', this).css('opacity', 0);
+        $(this).hover(function () {
+            $span.stop().fadeTo(500, 1);
+        }, function () {
+            $span.stop().fadeTo(500, 0);
+        });
+    });
+});
+</script>
+</head>
+<body>
+<div id="container">
+  <div id="logo"><a href="index.html"><img src="images/logo.png" width="242" height="85" alt="" /></a></div>
+  <div id="nav">
+    <ul>
+      <li><a href="index.html">Home</a><span class="nav_text">Welcome to our site</span></li>
+      <li><a href="page.html">About</a><span class="nav_text">Meet the team</span></li>
+      <li><a href="blog.html">Blog</a><span class="nav_text">Read our stories</span></li>
+      <li><a href="page.html">Contact</a><span class="nav_text">Get in touch</span></li>
+    </ul>
+  </div>
+  <!-- close nav -->
+  <div id="left">
+    <h2>Example Page</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id felis mi, at egestas ipsum. Maecenas at mauris sed quam cursus iaculis. Proin rutrum vulputate rutrum. Etiam suscipit, libero in auctor dignissim, diam est tincidunt ante, at hendrerit lectus eros a erat. Ut risus est, ornare eu porttitor at, congue eu elit. Vestibulum sit amet tincidunt magna. Etiam fermentum semper nisl et tempus. Donec egestas gravida justo, quis convallis enim consectetur sit amet. Etiam ut enim eu tellus pulvinar pretium in vel sem. In ut lorem tellus, a varius orci. Aliquam semper orci eu ante dignissim aliquam. Maecenas euismod ipsum sit amet lorem mollis eu tempor nunc semper. Phasellus pellentesque consectetur turpis, a venenatis nisl ultricies non. Duis a sapien eget magna tincidunt blandit. Mauris in orci nibh, lobortis pretium est.</p>
+    <p>In malesuada, libero et dapibus molestie, sapien lectus mollis metus, interdum facilisis massa libero ultricies libero. Sed iaculis dapibus leo, a varius massa commodo in. Vestibulum pellentesque, sapien quis fringilla luctus, diam urna blandit sapien, in aliquet sem libero eu risus. In nec scelerisque ligula. Maecenas cursus velit eu tellus porta dapibus non sagittis libero. Aenean at magna est, sed congue metus. Integer convallis aliquet est, vel hendrerit est vulputate ut. Nulla tristique enim et nunc ullamcorper interdum. Integer ultricies tincidunt fringilla. Donec blandit semper felis, vitae feugiat lacus varius volutpat. Etiam odio felis, adipiscing sit amet ornare feugiat, gravida nec turpis. Pellentesque aliquam leo sed dolor vehicula a adipiscing mauris tempus. Cras sapien augue, interdum id facilisis vitae, porttitor id turpis. Nam feugiat urna vel ante egestas blandit. Etiam eget mi urna, a molestie enim. Aliquam quis odio dui. Nulla mauris neque, pulvinar vel bibendum quis, tincidunt non justo. Suspendisse nunc nibh, pretium id rhoncus non, pretium id ligula. Morbi adipiscing nulla in est mattis aliquet gravida sit amet sapien.</p>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus id arcu purus, rhoncus congue diam. Mauris interdum, felis et adipiscing pulvinar, urna nisi mollis massa, at tincidunt est leo et justo. Cras varius, tellus vitae auctor hendrerit, ante felis laoreet elit, sit amet rutrum diam leo at tellus. Nulla at ipsum libero. In rutrum porta lobortis. Cras enim eros, laoreet vel ullamcorper non, auctor sit amet lectus. Aliquam in laoreet sapien. Ut adipiscing tempus diam nec ultricies. Suspendisse ut condimentum turpis. Morbi congue porta lectus, eu pharetra est dictum vel. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sit amet lectus in metus placerat tincidunt non eu urna. Sed urna ligula, semper at consectetur a, viverra nec nisi. </p>
+  </div>
+  <!-- close left -->
+  <div id="right">
+    <h3>Recent Projects</h3>
+    <ul class="pane-list">
+      <li><img src="images/thumb1.jpg" width="46" height="46" alt="" />
+        <h2 class="latest_products_heading"><a href="page.html">Macbook Mini</a></h2>
+        <p class="product_text">Praesent commodo tempus leo, sed aliquet velit tincidunt et. In hac habitasse platea dictumst.</p>
+      </li>
+      <li><img src="images/thumb2.jpg" width="46" height="46" alt="" />
+        <h2 class="latest_products_heading"><a href="page.html">Macbook Pro</a></h2>
+        <p class="product_text">Proin sollicitudin porta hendrerit. Vivamus fermentum leo eget tellus luctus</p>
+      </li>
+      <li><img src="images/thumb3.jpg" width="46" height="46" alt="" />
+        <h2 class="latest_products_heading"><a href="page.html">Iphone Black</a></h2>
+        <p class="product_text">Mauris pulvinar porta tincidunt. Morbi luctus, lacus nec commodo condimentum</p>
+      </li>
+    </ul>
+    <h3>Get In Touch</h3>
+    <div id="form_container">
+      <form action="#" method="post" id="commentform">
+        <fieldset>
+          <legend>Send a Message</legend>
+          <p>
+            <input type="text" name="author" class="input_bg" value="" size="22" tabindex="1" />
+            <label for="author"><small>Name</small></label>
+          </p>
+          <p>
+            <input type="text" name="email" class="input_bg" value="" size="22" tabindex="2" />
+            <label for="email"><small>E-mail</small></label>
+          </p>
+          <p>
+            <textarea name="comment" class="input_bg" cols="50%" rows="10" tabindex="4"></textarea>
+          </p>
+          <p>
+            <input name="submit" type="submit" id="submit" tabindex="5" value="Send it" />
+            <input type='hidden' name='comment_post_ID' value='27' id='comment_post_ID' />
+            <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+          </p>
+        </fieldset>
+      </form>
+    </div>
+    <!-- close form_container -->
+    <h3>Other Links</h3>
+    <div id="v_navcontainer">
+      <ul>
+        <li><a href="#">Duis fringilla aliquam</a></li>
+        <li><a href="#">Morbi luctus</a></li>
+        <li><a href="#">Mauris pulvinar porta</a></li>
+        <li><a href="#">Praesent commodo</a></li>
+      </ul>
+    </div>
+    <!-- close v_navcontainer -->
+  </div>
+  <!-- close right -->
+</div>
+<!-- close container -->
+<div id="footer">Template by: <a href="http://www.csstemplateheaven.com">CssTemplateHeaven</a>
+  <div id="sharethis">
+    <ul>
+      <li><a href="#" class="twitter"><span>Twitter</span></a></li>
+      <li><a href="#" class="facebook"><span>Facebook</span></a></li>
+      <li><a href="#" class="rss"><span>RSS feed</span></a></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
